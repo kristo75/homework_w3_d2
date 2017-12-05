@@ -4,26 +4,23 @@ require_relative('./models/space_cowboys')
 Bounty.delete_all()
 
 
-order1 = Bounty.new({
-  'first_name' => "Luke",
-  'last_name' => 'Skywalker',
-  'quantity' => '1',
-  'topping' => 'Napoli'
+bounty1 = Bounty.new({
+    'name' => 'Kris',
+    'species'=> "Human",
+    'bounty_value' => '5',
+    'danger_level' => 'medium',
   })
 
-  order2 = Bounty.new({
-    'first_name' => "Darth",
-    'last_name' => 'Vader',
-    'quantity' => '1',
-    'topping' => 'Quattro Formaggi'
-    })
+  # bounty2 = Bounty.new({
 
-    order1.save()
-    order2.save()
-    order1.delete()
-    order1.first_name = "Fred"
-    order1.update
-    orders = Bounty.all()
+
+
+    bounty1.save()
+    # # bounty2.save()
+    # bounty1.delete()
+    bounty1.name = "Alex"
+    bounty1.update
+    bounty = Bounty.all()
 
 binding.pry
 nil
