@@ -20,6 +20,7 @@ bounty1 = Bounty.new({
     # bounty1.delete()
     bounty1.name = "Alex"
     bounty1.update
+    bounty1.find "id"
     bounty = Bounty.all()
 
 binding.pry
